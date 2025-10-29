@@ -9,10 +9,10 @@ class Conta{
     string nome;
 
     Conta(int numero, double saldo, double limite, string nome){
-        numero = numero;
-        saldo = saldo;
-        limite = limite;
-        nome = nome;
+        this->numero = numero;
+        this->saldo = saldo;
+        this->limite = limite;
+        this->nome = nome;
     }
 
     bool saca(double valor){
