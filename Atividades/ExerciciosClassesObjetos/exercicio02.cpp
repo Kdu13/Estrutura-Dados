@@ -17,20 +17,23 @@ public:
         ladoC = c;
     }
 
-    void eUmTriangulo()
+    bool eUmTriangulo()
     {
         if ((ladoA + ladoB > ladoC) && (ladoA + ladoC > ladoB) && (ladoB + ladoC > ladoA))
         {
             cout << "E um triangulo.\n";
+            return true;
         }
         else
         {
             cout << "Nao e um triangulo.\n";
+            return false;
         }
     }
 
     void tipoDeTriangulo()
     {
+        if(eUmTriangulo()){
         if ((ladoA == ladoB) && (ladoB == ladoC))
         {
             cout << "E um triangulo Equilatero.";
@@ -44,6 +47,7 @@ public:
             cout << "E um triangulo Escaleno.";
         }
     }
+}
 };
 
 
